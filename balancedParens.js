@@ -18,7 +18,10 @@ function has_balanced_parens(str){
     return(open === close);
 }
 
-console.log(has_balanced_parens(sample1));
-console.log(has_balanced_parens(sample2));
-console.log(has_balanced_parens(sample3));
-console.log(has_balanced_parens(sample4));
+//more condensed version
+const has_balanced_parens2 = str => str.split('(').length === str.split(')').length;
+
+console.log(has_balanced_parens2(sample1));
+console.log(has_balanced_parens2(sample2));
+console.log(has_balanced_parens2(sample3));
+console.log(has_balanced_parens2(sample4));
